@@ -220,13 +220,16 @@ doom_one.set_colorscheme = function()
   set_hl("SpecialBold", { fg = palette.violet, bold = true })
 
   set_hl("Field", { fg = palette.violet })
-  set_hl("Argument", { fg = dark_theme and utils.lighten(palette.purple, 0.4) or utils.darken(palette.purple, 0.36) })
-  set_hl("Attribute", { fg = dark_theme and utils.lighten(palette.purple, 0.4) or utils.darken(palette.purple, 0.36) })
-  set_hl("Identifier", { fg = dark_theme and utils.lighten(palette.purple, 0.4) or utils.darken(palette.purple, 0.36) })
+  set_hl("Argument", { fg = dark_theme and utils.lighten(palette.purple, 0.4) or utils.darken(palette.magenta, 0.36) })
+  set_hl("Attribute", { fg = dark_theme and utils.lighten(palette.purple, 0.4) or utils.darken(palette.magenta, 0.36) })
+  set_hl(
+    "Identifier",
+    { fg = dark_theme and utils.lighten(palette.purple, 0.4) or utils.darken(palette.magenta, 0.36) }
+  )
   set_hl("Property", { fg = palette.purple })
   set_hl("Function", { fg = palette.purple })
   set_hl("FunctionBuiltin", {
-    fg = dark_theme and utils.lighten(palette.purple, 0.4) or utils.darken(palette.purple, 0.2),
+    fg = dark_theme and utils.lighten(palette.purple, 0.4) or utils.darken(palette.magenta, 0.2),
     bold = true,
   })
   set_hl("KeywordFunction", { fg = dark_theme and palette.blue or palette.red, bold = true })
