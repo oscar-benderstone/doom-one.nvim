@@ -197,7 +197,7 @@ doom_one.set_colorscheme = function()
   set_hl("Delimiter", { fg = dark_theme and palette.blue or palette.red })
   set_hl("Statement", { fg = dark_theme and palette.magenta or palette.red })
   set_hl("Exception", { fg = dark_theme and palette.magneta or palette.red })
-  set_hl("Conditional", { fg = dark_theme and palette.magenta }) -- or palette.red })
+  set_hl("Conditional", { fg = dark_theme and palette.purple }) -- or palette.red })
 
   set_hl("Variable", { fg = utils.darken(palette.blue, 0.36) })
   set_hl("VariableBuiltin", { fg = palette.magenta, bold = true })
