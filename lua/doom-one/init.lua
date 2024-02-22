@@ -220,12 +220,18 @@ doom_one.set_colorscheme = function()
   set_hl("SpecialBold", { fg = palette.violet, bold = true })
 
   set_hl("Field", { fg = palette.violet })
-  set_hl("Argument", { fg = dark_theme and utils.lighten(palette.magenta, 0.3) or utils.darken(palette.magenta, 0.25) })
+  set_hl(
+    "Argument",
+    { fg = dark_theme and utils.lighten(palette.magenta, 0.25) or utils.darken(palette.magenta, 0.25) }
+  )
   set_hl(
     "Attribute",
     { fg = dark_theme and utils.lighten(palette.magenta, 0.3) or utils.darken(palette.magenta, 0.25) }
   )
-  set_hl("Identifier", { fg = dark_theme and utils.lighten(palette.blue, 0.4) or utils.darken(palette.magenta, 0.25) })
+  set_hl(
+    "Identifier",
+    { fg = dark_theme and utils.mix(palette.blue, palette.violet, 0.4) or utils.darken(palette.magenta, 0.25) }
+  )
   set_hl("Property", { fg = palette.blue })
   set_hl("Function", { fg = palette.blue })
   set_hl("FunctionBuiltin", {
