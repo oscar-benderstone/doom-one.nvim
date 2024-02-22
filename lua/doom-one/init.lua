@@ -197,7 +197,7 @@ doom_one.set_colorscheme = function()
   set_hl("Delimiter", { fg = dark_theme and palette.blue or palette.red })
   set_hl("Statement", { fg = dark_theme and palette.purple or palette.red })
   set_hl("Exception", { fg = dark_theme and palette.purple or palette.red })
-  set_hl("Conditional", { fg = dark_theme and palette.magenta or palette.red })
+  set_hl("Conditional", { fg = dark_theme and palette.purple or palette.red })
 
   set_hl("Variable", { fg = utils.darken(palette.blue, 0.36) })
   set_hl("VariableBuiltin", { fg = palette.magenta, bold = true })
@@ -233,7 +233,7 @@ doom_one.set_colorscheme = function()
     bold = true,
   })
   set_hl("KeywordFunction", { fg = dark_theme and palette.blue or palette.red, bold = true })
-  set_hl("Method", { fg = dark_theme and palette.cyan }) -- or palette.cyan })
+  set_hl("Method", { fg = dark_theme and utils.lighten(palette.blue, 0.2) }) -- or palette.cyan })
 
   set_hl("Type", { fg = palette.yellow })
   set_hl("Typedef", { fg = dark_theme and palette.blue or palette.red })
