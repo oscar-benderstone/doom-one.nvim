@@ -230,7 +230,7 @@ doom_one.set_colorscheme = function()
   )
   set_hl(
     "Identifier",
-    { fg = dark_theme and utils.lighten(palette.purple, 0.5) or utils.darken(palette.magenta, 0.25) }
+    { fg = dark_theme and utils.lighten(palette.purple, 0.3) or utils.darken(palette.magenta, 0.25) }
   )
   set_hl("Property", { fg = palette.blue })
   set_hl("Function", { fg = palette.blue })
