@@ -230,7 +230,7 @@ doom_one.set_colorscheme = function()
   )
   set_hl(
     "Identifier",
-    { fg = dark_theme and utils.mix(palette.blue, palette.violet, 0.4) or utils.darken(palette.magenta, 0.25) }
+    { fg = dark_theme and utils.mix(palette.blue, palette.violet, 0.7) or utils.darken(palette.magenta, 0.25) }
   )
   set_hl("Property", { fg = palette.blue })
   set_hl("Function", { fg = palette.blue })
@@ -241,9 +241,9 @@ doom_one.set_colorscheme = function()
   set_hl("KeywordFunction", { fg = dark_theme and palette.blue or palette.red, bold = true })
   set_hl("Method", { fg = dark_theme and utils.lighten(palette.blue, 0.1) }) -- or palette.cyan })
 
-  set_hl("Type", { fg = utils.mix(palette.blue, palette.dark_cyan, 0.5) })
+  set_hl("Type", { fg = palette.yellow }) -- utils.mix(palette.blue, palette.dark_cyan, 0.5) })
   set_hl("Typedef", { fg = dark_theme and palette.blue or palette.red })
-  set_hl("TypeBuiltin", { fg = palette.dark_cyan, bold = true })
+  set_hl("TypeBuiltin", { fg = palette.yellow })
   set_hl("Class", { fg = dark_theme and palette.blue or palette.red })
   set_hl("StorageClass", { fg = dark_theme and palette.blue or palette.red })
   set_hl("Structure", { fg = dark_theme and palette.blue or palette.red })
