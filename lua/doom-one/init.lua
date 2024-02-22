@@ -192,11 +192,11 @@ doom_one.set_colorscheme = function()
 
   set_hl("Label", { fg = dark_theme and palette.blue or palette.red })
   set_hl("Repeat", { fg = dark_theme and palette.blue or palette.red })
-  set_hl("Keyword", { fg = dark_theme and palette.magenta or palette.red })
-  set_hl("Operator", { fg = dark_theme and palette.magenta or palette.red })
+  set_hl("Keyword", { fg = dark_theme and palette.blue or palette.red })
+  set_hl("Operator", { fg = dark_theme and palette.blue or palette.red })
   set_hl("Delimiter", { fg = dark_theme and palette.blue or palette.red })
-  set_hl("Statement", { fg = dark_theme and palette.magenta or palette.red })
-  set_hl("Exception", { fg = dark_theme and palette.magenta or palette.red })
+  set_hl("Statement", { fg = dark_theme and palette.purple or palette.red })
+  set_hl("Exception", { fg = dark_theme and palette.purple or palette.red })
   set_hl("Conditional", { fg = dark_theme and palette.magenta or palette.red })
 
   set_hl("Variable", { fg = utils.darken(palette.blue, 0.36) })
@@ -220,23 +220,20 @@ doom_one.set_colorscheme = function()
   set_hl("SpecialBold", { fg = palette.violet, bold = true })
 
   set_hl("Field", { fg = palette.violet })
-  set_hl("Argument", { fg = dark_theme and utils.lighten(palette.magenta, 0.4) or utils.darken(palette.magenta, 0.25) })
+  set_hl("Argument", { fg = dark_theme and utils.lighten(palette.magenta, 0.3) or utils.darken(palette.magenta, 0.25) })
   set_hl(
     "Attribute",
-    { fg = dark_theme and utils.lighten(palette.magenta, 0.4) or utils.darken(palette.magenta, 0.25) }
+    { fg = dark_theme and utils.lighten(palette.magenta, 0.3) or utils.darken(palette.magenta, 0.25) }
   )
-  set_hl(
-    "Identifier",
-    { fg = dark_theme and utils.lighten(palette.magenta, 0.4) or utils.darken(palette.magenta, 0.25) }
-  )
-  set_hl("Property", { fg = palette.magenta })
-  set_hl("Function", { fg = palette.magenta })
+  set_hl("Identifier", { fg = dark_theme and utils.lighten(palette.blue, 0.4) or utils.darken(palette.magenta, 0.25) })
+  set_hl("Property", { fg = palette.blue })
+  set_hl("Function", { fg = palette.blue })
   set_hl("FunctionBuiltin", {
     fg = dark_theme and utils.lighten(palette.magenta, 0.4) or utils.darken(palette.magenta, 0.1),
     bold = true,
   })
   set_hl("KeywordFunction", { fg = dark_theme and palette.blue or palette.red, bold = true })
-  set_hl("Method", { fg = dark_theme and palette.violet or palette.cyan })
+  set_hl("Method", { fg = dark_theme and palette.cyan }) -- or palette.cyan })
 
   set_hl("Type", { fg = palette.yellow })
   set_hl("Typedef", { fg = dark_theme and palette.blue or palette.red })
