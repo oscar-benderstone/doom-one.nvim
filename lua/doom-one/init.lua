@@ -199,8 +199,8 @@ doom_one.set_colorscheme = function()
   set_hl("Exception", { fg = dark_theme and palette.blue or palette.red })
   set_hl("Conditional", { fg = dark_theme and palette.blue or palette.red })
 
-  set_hl("Variable", { fg = utils.darken(palette.purple, 0.36) })
-  set_hl("VariableBuiltin", { fg = palette.purple, bold = true })
+  set_hl("Variable", { fg = utils.darken(palette.magenta, 0.36) })
+  set_hl("VariableBuiltin", { fg = palette.magenta, bold = true })
   set_hl("Constant", { fg = palette.violet, bold = true })
 
   set_hl("Number", { fg = palette.orange })
@@ -220,16 +220,19 @@ doom_one.set_colorscheme = function()
   set_hl("SpecialBold", { fg = palette.violet, bold = true })
 
   set_hl("Field", { fg = palette.violet })
-  set_hl("Argument", { fg = dark_theme and utils.lighten(palette.purple, 0.4) or utils.darken(palette.magenta, 0.36) })
-  set_hl("Attribute", { fg = dark_theme and utils.lighten(palette.purple, 0.4) or utils.darken(palette.magenta, 0.36) })
+  set_hl("Argument", { fg = dark_theme and utils.lighten(palette.magenta, 0.4) or utils.darken(palette.magenta, 0.36) })
+  set_hl(
+    "Attribute",
+    { fg = dark_theme and utils.lighten(palette.magenta, 0.4) or utils.darken(palette.magenta, 0.36) }
+  )
   set_hl(
     "Identifier",
-    { fg = dark_theme and utils.lighten(palette.purple, 0.4) or utils.darken(palette.magenta, 0.36) }
+    { fg = dark_theme and utils.lighten(palette.magenta, 0.4) or utils.darken(palette.magenta, 0.36) }
   )
-  set_hl("Property", { fg = palette.purple })
-  set_hl("Function", { fg = palette.purple })
+  set_hl("Property", { fg = palette.magenta })
+  set_hl("Function", { fg = palette.magenta })
   set_hl("FunctionBuiltin", {
-    fg = dark_theme and utils.lighten(palette.purple, 0.4) or utils.darken(palette.magenta, 0.2),
+    fg = dark_theme and utils.lighten(palette.magenta, 0.4) or utils.darken(palette.magenta, 0.2),
     bold = true,
   })
   set_hl("KeywordFunction", { fg = dark_theme and palette.blue or palette.red, bold = true })
@@ -541,8 +544,8 @@ doom_one.set_colorscheme = function()
 
   if config.plugins.whichkey then
     set_hl("WhichKey", { fg = dark_theme and palette.blue or palette.red })
-    set_hl("WhichKeyGroup", { fg = palette.purple })
-    set_hl("WhichKeyDesc", { fg = palette.purple })
+    set_hl("WhichKeyGroup", { fg = palette.magenta })
+    set_hl("WhichKeyDesc", { fg = palette.magenta })
     set_hl("WhichKeySeparator", { link = "Separator" })
     set_hl("WhichKeyFloat", { fg = dark_theme and palette.base2 or palette.base6 })
     set_hl("WhichKeyValue", { fg = palette.grey })
